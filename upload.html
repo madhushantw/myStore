@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload</title>
+    <link rel="stylesheet" href="./style/upload.css">
+    <link rel="stylesheet" href="./style/card.css">
+</head>
+<body>
+    <!-- <script language="javascript" type="text/javascript" src="./script/header.txt"></script> -->
+    <div class="nav">
+         <div class="logo">
+            <a href ="index.html">
+                <img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNTAiIGhlaWdodD0iNTAiCnZpZXdCb3g9IjAgMCA1MCA1MCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij48cGF0aCBkPSJNIDExLjk4NjMyOCAwIEMgMTEuODE1MDc4IDAuMDAyIDExLjY0NTE4OCAwLjA0ODY3MTg3NSAxMS40OTIxODggMC4xMzg2NzE4OCBDIDExLjE4ODE4OCAwLjMxODY3MTg4IDExIDAuNjQ2IDExIDEgTCAxMSAxMy4zNTM1MTYgQyAxMSAxMy43Mzc1MTYgMTEuMjE5NDA2IDE0LjA4OTg1OSAxMS41NjY0MDYgMTQuMjU1ODU5IEwgMjkuNTY2NDA2IDIyLjkwMDM5MSBDIDI5LjcwMzQwNiAyMi45NjYzOTEgMjkuODUzIDIzIDMwIDIzIEMgMzAuMTk0IDIzIDMwLjM4NzY4OCAyMi45NDMwMzEgMzAuNTU0Njg4IDIyLjgzMjAzMSBMIDM5LjU1NDY4OCAxNi44MzIwMzEgQyAzOS44NDQ2ODcgMTYuNjM5MDMxIDQwLjAxMzA0NyAxNi4zMDc5ODQgMzkuOTk4MDQ3IDE1Ljk1ODk4NCBDIDM5Ljk4NDA0NyAxNS42MTA5ODQgMzkuNzg5Mzc1IDE1LjI5NTk1MyAzOS40ODQzNzUgMTUuMTI2OTUzIEwgMTIuNDg0Mzc1IDAuMTI2OTUzMTIgQyAxMi4zMjkzNzUgMC4wNDA5NTMxMjUgMTIuMTU3NTc4IC0wLjAwMiAxMS45ODYzMjggMCB6IE0gMTIuMDI1MzkxIDE3IEMgMTEuODUwMDE2IDE2Ljk5NTUgMTEuNjc0NjI1IDE3LjAzODQ1MyAxMS41MTU2MjUgMTcuMTI2OTUzIEMgMTEuMTk3NjI1IDE3LjMwMjk1MyAxMSAxNy42MzYgMTEgMTggTCAxMSA0OC45OTgwNDcgQyAxMSA0OS43NTgwNDcgMTEuODEzNDY5IDUwLjI0MTk1MyAxMi40ODA0NjkgNDkuODc2OTUzIEwgNDAuNDk2MDk0IDMzLjg2NzE4OCBDIDQwLjgwODA5NCAzMy42ODkxODggNDEgMzMuMzU5IDQxIDMzIEwgNDEgMjAgQyA0MSAxOS41OTIgNDAuNzUzIDE5LjIyNTI2NiA0MC4zNzUgMTkuMDcyMjY2IEMgMzkuOTk1IDE4LjkyMDI2NiAzOS41NjIyOTcgMTkuMDExNjg4IDM5LjI3OTI5NyAxOS4zMDQ2ODggTCAxMyA0NyBMIDIwLjk1NTA3OCAyMy4yOTQ5MjIgQyAyMS4wODgwNzggMjIuODYxOTIyIDIwLjkxMzI5NyAyMi4zOTIzNDQgMjAuNTI5Mjk3IDIyLjE1MjM0NCBMIDEyLjUyOTI5NyAxNy4xNTIzNDQgQyAxMi4zNzQ3OTcgMTcuMDU1ODQ0IDEyLjIwMDc2NiAxNy4wMDQ1IDEyLjAyNTM5MSAxNyB6Ij48L3BhdGg+PC9zdmc+"/>
+                <h1>My Store</h1>
+            </a>
+        </div>
+        <!-- <a href="">Edit</a>
+        <a href="">Add new</a> -->
+    </div>
+    <div class="upFrame">
+    <h2>Add a new Application</h2>
+        <form name="form" id = "form" action="./php/upload.php" method="POST" enctype="multipart/form-data">
+            <div>
+                <div class="input">
+                    <label for="sfName">Name of Software</label>
+                    <input type="text" id="sfName" name = "sfName" class="inputCtrl" placeholder="Name of Software">
+                </div>
+                <div class="input">
+                    <label for="conpany">Company</label>
+                    <input type="text" id="sfCompany" name = "sfCompany" class="inputCtrl" placeholder="Conpany">
+                </div>
+                <div class="input">
+                    <label for="developer">Developer Team</label>
+                    <input type="text" id="sfDeveloper" name = "sfDeveloper" class="inputCtrl" placeholder="Developer Team">
+                </div>
+                <div class="input">
+                    <label for="flateform">Flat form</label>
+                    <select name="sfFlatform" class="optionSelect" id="flatform">
+                        <option value="windows">Windows</option>
+                        <option value="linux">Linux</option>
+                        <option value="mac">Mac</option>
+                        <option value="angroid">Angroid</option>
+                        <option value="ios">Ios</option>
+                    </select>
+                
+                    <label for="catergory">Category</label>
+                    <select name="sfType" class="optionSelect" id="sftType">
+                        <option value="browsers">Web browsers</option>
+                        <option value="presentation">Presentation</option>
+                        <option value="spreadsheet">Spreadsheet</option>
+                        <option value="graphic">Graphic</option>
+                        <option value="word">Word processors</option>
+                        <option value="database">Database</option>
+                        <option value="multimedia">Multimedia</option>
+                        <option value="education">Education</option>
+                        <option value="information">Information</option>
+                        <option value="content">Content access</option>
+                        <option value="games">Games</option>
+                    </select>
+                </div>
+
+                <div class="discriptionArea input">
+                    <div>
+                        <p>About Software</p>
+                        <div class="discription" id = "discription">
+                            <textarea name="dis1" id="dis1" class="inputCtrl" placeholder="About..."></textarea>
+                        </div>
+                    </div>
+                </div>
+                
+
+                    <div class="input uploadImg" >
+
+                        <p>Cover Image and Icon</p>
+                        <div class="coverAndIcon">  
+
+                            <div class = "uploadHeaderImg" id = "uploadHeaderImg" onchange="addCover(event);">
+                                <img id = "hPreview">
+                                <input type="file" id="cBtn" name="imgCover" accept="image/*">
+                            </div>
+
+                            <div class="uploadIcon" id = "uploadIcon" onchange="addIcon(event);">
+                                <img id="iPreview">
+                                <input type="file" id="iBtn" name="icon" accept="image/*">
+                            </div>
+
+                        </div>
+
+                        <div class="lables">
+                            <label id = "hLable" for="cBtn">Upload Image</label> 
+                            <label id = "iLable" for="iBtn">Icon</label>
+                        </div>
+
+                    </div>
+
+                    <div class="input" id='abt'>
+                        <p>Upload Screenshot</p>
+                        
+                        <div class="imgSlider" id="imgSlider">
+                            <div class="sliders" style="display: none;">
+                                <button class="custom-btn-add" id="custom-btn-add">+</button>       
+                            </div>
+                        </div>
+                        <input type="file" id="addSlide" name="addSlide[]" multiple="multiple" accept="image/*" style=" display:none;">
+                        
+                        <div class="lbl"><label for="addSlide"  class="ss">choose Screenshot</label></div>
+                    </div>
+                    
+                    <div class="discriptionArea input" id ="discriptionArea">
+                        <div class="cardRow" id="cardRow">
+                            <!--Discriptions-->
+                        </div>
+                        <div id = 'dInput'>
+                            <p>Add discription</p>
+                            <div class="discription" id = "discription">
+                                <input type="text" name = "disTitle" id="disTitle" class="inputCtrl" placeholder="Topic">
+                                <textarea name="disBody" id="disBody"  class="inputCtrl" placeholder="Note body..."></textarea>
+                            </div>
+                            <button id = "btnAddDis">Add</button>
+                        </div>
+                        
+                    </div>
+                    <div class="input">
+                        <p>Input Your Application  </p>
+                        <div class="uploadSoftware">
+                            
+                            <input type="file" id = "file" name="application" style="display:none;"><br><br>
+                            <label id = "iLable"  for="file">Choose file</label>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" name="submit" class="submit" value="Upload"/>
+            </form>
+    </div>
+
+    <script src="./script/Upload.js"></script>
+</body>
+</html>

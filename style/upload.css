@@ -1,0 +1,246 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.nav{
+    background-color:#303030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+.nav a{
+    margin: auto 0;
+    display: flex;
+    padding-right:  50px;
+    padding-left: 50px;
+    line-height: 70px;
+    text-decoration:none;
+	margin:auto 0;
+	color:#2F4F4F;
+	border-radius: 2px;
+}
+.logo{
+    margin-right: 50px;
+    margin-bottom: 0px;
+}
+.logo a{
+    align-items: center;
+}
+.logo a Img{
+    border: 1px solid blanchedalmond;
+    padding: 4px;
+    border-radius: 15px;
+	width:50px;
+	height: 50px;
+	margin:0px 25px 0 0;
+    filter:invert(70%);
+}
+.logo h1{
+	margin:auto 0;
+	padding: 0;
+    color: blanchedalmond;
+}
+.upFrame{
+    width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    display: block;
+    border-radius: 8px;
+    background: #303030;
+    box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.582);
+    box-sizing: border-box;
+}
+.upFrame h2{
+    text-align: center;
+    color: #fff;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.input{
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto;
+    min-height: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.103);
+}
+.inputCtrl{
+    width: 50%;
+    background: none;
+    margin-left: 20px;
+    border: none;
+    font-size: 14px;
+    border-bottom: 1px solid DodgerBlue;
+    padding: 0 0 8px 0;
+    outline: none;
+    transition: border-color .2s;
+}
+.input>.inputCtrl{
+    float: right;
+    width: 350px;
+}
+
+textarea{
+    margin-top: 10px;
+    width: 500px;
+}
+.inputCtrl:focus {
+    border-bottom-color:RoyalBlue;
+}
+
+.optionSelect{
+    margin-right: 25px;
+}
+.uploadHeaderImg {
+    width: 500px;
+    height: 150px;
+    box-sizing: border-box;
+    background-color:  rgba(73, 73, 73, 0.219);
+    overflow: hidden;
+    border-radius: 8px; 
+}
+.uploadIcon{
+    width: 150px;
+    height: 150px;
+    margin-left: 5px;
+    box-sizing: border-box;
+    background-color:  rgba(73, 73, 73, 0.219);
+    overflow: hidden;
+    border-radius: 8px;
+}
+.uploadSoftware .addFiles{
+    height: 20px;
+    width: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.356);
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.uploadSoftware{
+    display: flex;
+}
+
+#iPreview,
+#hPreview{
+    width: 100%;
+    height: 150px;
+    display:none;
+    object-fit: cover;
+}
+.coverAndIcon{
+    display: flex;
+    min-width: 200px;
+}
+#cBtn,
+#iBtn{
+    display: none;
+}
+.uploadImg label, 
+.ss,
+#iLable{
+    margin: 5px;
+    padding:6px 15px;
+    background: DodgerBlue;
+    color: #fff;
+    font-size:13px;
+    font-weight:600;
+    border-radius:25px;
+}
+.submit,
+button{
+    margin: 5px;
+    padding:6px 15px;
+    background: DodgerBlue;
+    border: none;
+    color: #fff;
+    border-radius:25px;
+}
+.ss:hover,
+#hLable:hover,
+#iLable:hover,
+.submit:hover,
+button:hover{
+    background-color: RoyalBlue;
+}
+.lables{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 40px;
+}
+.lbl{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.imgSlider{
+    max-height:110px;
+	display:flex;
+	overflow:auto;
+}
+.imgSlider .sliders{
+    position: relative;
+    background-color:  rgba(73, 73, 73, 0.219);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 5px;
+    min-width: 150px;
+    max-height: 100px;
+}
+.cancel-btn{    
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    padding: 0px;
+    border: none;
+    border-radius: 50%;
+    color: rgba(125, 0, 209, 0.863);
+    display: none;
+    align-items: center;
+}
+.sliders .custom-btn-add{
+    border-radius: 4px;
+    margin: 20px 50px;
+    font-size: 50px;
+    font-weight: 10;
+    background:none;
+}
+.image img{
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+}
+#custom-btn,
+.custom-btn-add{
+    height: 30px;
+    padding-right:  20px;
+    padding-left: 20px;
+    background: rgb(125, 0, 209);
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 15px;
+}
+.card{
+    position: relative;
+}
+#dis1{
+    min-width: 95%;
+    max-width: 95%;
+}
+.card .inputCtrl{
+    width: 80%;
+}
+.card textarea{
+    height: 110px;
+    border: none;
+}
